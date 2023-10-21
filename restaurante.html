@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hoja.css">
+        <script src="menu.js"></script>
+        <title>restauranteJS</title>
+    </head>
+    <body>
+        <section>
+
+            <div class="contenedor">
+
+                <h1>PEDIDO RAPPI RESTAURANTE</h1><br>
+
+                    <h2>MENU PLATOS</h2><br>
+
+                    <label for="menuplatos">Seleccione su plato</label><br>
+                    <select id="platoscomida">
+                        <option value="0"></option>
+                        <option value="30000">Hamburguesa todo terrono Corral ($30.000)</option>     
+                        <option value="5000">Donas oreo Dunkin donuts ($5.000)</option>
+                        <option value="35000">Salchipapas dos torres El paisa ($35.000)</option>
+                        <option value="24000">Pizza peperoni Dominos ($24.000)</option>
+                        <option value="85000">Cubeta de pollo KFC ($85.000)</option>    
+                    </select><br><br>
+
+                    <label for="cantidadplatos">¿Cantidad de platos? </label><br>
+                    <input type="number" id="cantidad" min="0"><br><br>
+
+                    <h2>MENU BEBIDAS</h2><br>
+                    <label for="menubebidas">Seleccione su bebida</label><br>
+                    <select id="numbedidas">
+                        <option value="0"></option>
+                        <option value="3000">Postobon manzana 250 ml ($3.000)</option>
+                        <option value="3500">Cocacola 250 ml($3.500)</option>
+                        <option value="7000">ice coffe ($7.000)</option>
+                        <option value="3500">Pessi 250 ml ($3.500)</option>
+                        <option value="2500">Speed max ($2.500)</option>
+                    </select><br><br>
+
+                    <label>¿Cantidad de bebidas?</label><br>
+                    <input type="number" id="cantidadBebidas" min="1"><br>
+
+                    <br>
+            
+                    <button id="btn-1" onclick="mostrar()" role="alert">Valor Total</button>
+
+                    <div id="respuesta">
+                        <strong id="resultado"></strong>
+                    </div>
+            </div>
+
+        </section>
+    </body>
+    </html>
